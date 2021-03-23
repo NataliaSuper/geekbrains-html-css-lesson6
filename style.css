@@ -348,6 +348,9 @@ color: #FFFFFF;
 	color: #FFF;
 	padding-left: 19px;
 	margin-left: 20px;
+	flex-grow: 1;
+        flex-basis: 33%;
+}
 }
 
 .section-contacts {
