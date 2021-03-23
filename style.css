@@ -1,0 +1,371 @@
+/*Обнуление стилей*/
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+	font-family: Roboto;
+	margin: 0;
+}
+
+ul {padding: 0px;}
+
+/*Блок container, отвечающий за центрирование нашей страницы*/
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/*В шапке сайта располагаем элементы горизонтально*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	margin: 0;
+}
+
+.header li {
+	list-style-type: none;	
+}
+
+.section-heading {
+	margin-top: 112px;
+	background: url('img/top-image.png') right top no-repeat;
+	flex-grow: 1;
+
+}
+
+.paragraph {
+	font-size: 16px;
+	line-height: 162%;
+	color: #1F3F68;
+	letter-spacing: 0.05em;
+	opacity: 0.6;
+}
+
+.top {
+	padding-top: 42px;
+	height: 768px;
+	background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+	box-sizing: border-box;
+}
+
+.top-paragraph {
+	width: 425px;
+	margin-top: 32px;
+	margin-bottom: 71px;
+}
+
+.top-title {
+	text-align: center;
+}
+
+.top__info_box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.top-button {
+	font-size: 16px;
+	line-height: 26px;
+	background: #5A98D0;
+	box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+	border-radius: 10px;
+	padding: 15px 50px;
+	text-decoration: none;
+	display: inline-block;
+
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+}
+
+/*Заголовку h1 указать ширину 510px*/
+.heading-1 {
+	font-size: 64px;
+	color: #1F3F68;
+	width: 510px;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 116%;
+	letter-spacing: 0.04em;
+	margin: 0;
+}
+
+.heading-2 {
+	font-weight: 500;
+	font-size: 44px;
+	text-align: center;
+}
+
+.heading-3 {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 300;
+	line-height: 128%;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.heading-4 {
+	font-size: 20px;
+	line-height: 30px;
+	color: #1F3F68;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.main-content {
+	padding-top: 64px;
+}
+
+/*.main-content .heading-4 {
+	text-transform: capitalize;
+	margin-bottom: 14px;
+}*/
+
+.main-content-items {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 64px;
+	margin-bottom: 64px;
+}
+
+.main-content__item {
+	width: 359px;
+	padding: 44px 32px;
+	box-sizing: border-box;
+	background: #FFFFFF;
+	box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content__item p {
+	margin-top: 14px;
+	margin-bottom: 0;
+}
+
+.main-content-item-link {
+	font-size: 14px;
+	line-height: 214%;
+	letter-spacing: 0.05em;
+	color: #5A98D0;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.main-content-item-link span{
+	background: url('img/arrow.svg') right no-repeat;
+	padding-right: 24px;
+}
+
+.main-content__item-image {
+	margin-bottom: 51px;
+	align-self: center;
+}
+
+.finished-project {
+	text-align: center;
+}
+
+.finished-project .heading-3 {
+	margin-bottom: 32px;
+}
+
+.finished-project .paragraph {
+	color: #222222;
+	width: 75%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 64px;
+	opacity: 1;
+}
+
+.finished-project-pictures {
+	position: relative;
+	flex-grow: 1;
+}
+
+.finished-project-pictures:last-child {
+	margin-left: 32px;
+}
+
+.project__image {
+	width: 100%;
+	/*При включении данного свойства картинки становятся разного размера :(*/
+}
+
+.project__image-1 {
+	width: 100%;
+}
+
+/*.finished-project-pictures img {
+	width: 100%
+}*/
+
+.project-text {
+	position: absolute;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+
+.project-text-big {
+	position: absolute;
+	top: 64px;
+	right: 64px;
+	font-size: 32px;
+	line-height: 144%;
+	/*text-align: right;*/
+	margin: 0;
+	}
+
+.project-text-small {
+	position: absolute;
+	top: 32px;
+	left: 32px;
+	font-size: 28px;
+	line-height: 164%;
+	margin: 0;	
+}
+
+.project-picture-small {
+	display: flex;
+	justify-content: space-between;
+	/*margin-top: 32px;
+	margin-bottom: 112px;*/
+	margin: 32px auto 112px;
+}
+
+.input {
+	border: 1px solid #356EAD;
+	box-sizing: border-box;
+	border-radius: 10px;
+	opacity: 0.4;
+}
+
+.input-title {
+	display: inline-block;
+	min-width: 80px;
+}
+
+.button {
+	background: #5A98D0;
+	box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.bottom {
+	background-color: #316099;
+}
+/*.bottom-info, .footer {
+	padding-left: 113px;
+	padding-right: 114px;
+}*/
+
+.bottom-info {
+	padding-top: 91px;
+	/*padding-right: 113px;*/
+	/*padding-left: 113px;*/
+	display: flex;
+	justify-content: space-between;
+}
+
+.heading-bottom, .paragraph-bottom {
+	color: #fff;
+	text-align: left;
+}
+
+.heading-bottom {
+	margin-bottom: 32px;
+	font-weight: 400;
+}
+
+.paragraph-bottom {
+	margin-bottom: 96px;
+	margin-top: 0;
+}
+
+/*Блоку контента (h4 “Intersted to woek” и p), в верхней части футера указать ширину 495px*/
+.section-bottom {
+	width: 495px;
+}
+
+.section-bottom .heading-3 {
+	width: 340px;
+}
+
+.button-bottom {
+	background: #5A98D0;
+	padding: 15px 80px;
+	font-size: 16px;
+	line-height: 162%;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #FFF;
+	text-decoration: none;
+	height: 100%;
+	margin-top: 73px;
+}
+
+.footer {
+	padding-bottom: 64px;
+	padding-left: 113px;
+	padding-right: 113px;
+}
+
+.footer-contacts {
+	display:flex;
+	justify-content: space-between;
+	margin: 64px auto 64px;
+	padding: 0;
+}
+
+.footer-contacts li {
+	list-style-position: outside;
+	max-width: 316px;
+	font-size: 16px;
+	line-height: 162%;
+	letter-spacing: 0.05em;
+	color: #FFF;
+	padding-left: 19px;
+	margin-left: 20px;
+}
+
+.section-contacts {
+	display: flex;
+	justify-content: space-around;
+}
+
+.copyright {
+	margin-top: 64px;
+}
+
+.copyright p {
+	opacity: 0.4;
+	color: #fff;
+}
+
+hr {
+	border: 1px solid #FFF;
+	opacity: 0.4;
+	margin: 0;
+}
